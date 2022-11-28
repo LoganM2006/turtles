@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #004B23;
+    color: white;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 10px;
+    text-align: center;
+    background: #007200;
+    font-family: fantasy;
+    letter-spacing: 0.3em;
+    text-shadow: 4px 4px 3px black;
+    height: 440px;
+  }
+  .mask1{
+    -webkit-mask-image: url(images/turtleiconsmaller.png);
+  mask-image: url(images/turtleiconsmaller.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; 
+      
+  }
+
+  .header h1 {
+    font-size: 50px;
+    transition:  1s;
+    padding: 2px;
+    margin-top: 0;
+    margin-left: 15.5em;
+    width: 7em;
+    height: 3em;
+  }
+  
+  h1:hover{
+background-color: black;
+  }
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  h2 {
+font-family:monospace;
+font-size:xx-large;
+  }
+
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+
+  .fakeimg img{ transition: 2s;
+  }
+.fakeimg img:hover {
+width: 250px;
+}
+
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #008000;
+    padding-left: 20px;
+    border-radius: 15px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #CCFF33;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  
+  }
+  .fakeimg2 {
+    background-color: #CCFF33;
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+  }
+  .img-container {
+    float: left;
+    width: 33.33%;
+
+    padding: 20px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  /* Add a card effect for articles */
+  .card {
+    background-color: #007200;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px outset gray;
+    
+  }
+  .card2{
+    background-color: #007200;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 50px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(#007200, #008000, #38B000);;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  #snap {
+z-index: -1;
+  }
+  #tort {
+z-index: 2;
+  }
+  .turtle{
+float: left;
+  }
